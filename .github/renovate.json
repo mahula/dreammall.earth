@@ -4,16 +4,17 @@
   ],
   "packageRules": [
     {
-      "description": "Automatically merge minor and patch-level updates",
-      "matchUpdateTypes": ["minor", "patch", "digest"],"updateTypes": ["minor", "patch", "digest"],
-      "automerge": true,
-      "automergeType": "pr",
-      "platformAutomerge": true
+      "matchUpdateTypes": ["minor", "patch"]
     }
   ],
   "npm": {
     "separateMinorPatch": true
   },
   "schedule": ["after 10pm every weekday"],
-  "enabledManagers": ["dockerfile", "github-actions", "npm"]
+  "enabledManagers": ["dockerfile", "github-actions", "npm"],
+  "rangeStrategy": "bump",
+  "prHourlyLimit": 0,
+  "prConcurrentLimit": 99,
+  "automergeType": "pr",
+  "platformAutomerge": true
 }
