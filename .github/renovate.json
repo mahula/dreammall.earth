@@ -4,7 +4,9 @@
   ],
   "packageRules": [
     {
-      "matchUpdateTypes": ["minor", "patch"]
+      "matchUpdateTypes": ["minor", "patch"],
+      "automergeType": "pr",
+      "platformAutomerge": true
     }
   ],
   "npm": {
@@ -14,7 +16,5 @@
   "enabledManagers": ["dockerfile", "github-actions", "npm"],
   "rangeStrategy": "bump",
   "prHourlyLimit": 5,
-  "prConcurrentLimit": 99,
-  "automergeType": "pr",
-  "platformAutomerge": true
+  "prConcurrentLimit": 99
 }
