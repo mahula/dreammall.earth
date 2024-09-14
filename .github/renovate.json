@@ -11,6 +11,6 @@
   "npm": {
     "separateMinorPatch": true
   },
-  "schedule": ["after 3:00am on sunday"],
+  "schedule": ["after 10pm every weekday"],
   "enabledManagers": ["dockerfile", "github-actions", "npm"]
 }
