@@ -10,5 +10,6 @@
   ],
   "npm": {
     "separateMinorPatch": true
-  }
+  },
+  "schedule": ["after 3:00am on sunday"]
 }
