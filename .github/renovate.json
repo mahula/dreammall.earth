@@ -1,0 +1,20 @@
+{
+  "extends": [
+    "config:base"
+  ],
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["minor", "patch"]
+    }
+  ],
+  "npm": {
+    "separateMinorPatch": true
+  },
+  "schedule": ["after 10pm every weekday"],
+  "enabledManagers": ["dockerfile", "github-actions", "npm"],
+  "rangeStrategy": "bump",
+  "prHourlyLimit": 0,
+  "prConcurrentLimit": 99,
+  "automergeType": "pr",
+  "platformAutomerge": true
+}
