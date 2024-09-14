@@ -1,4 +1,4 @@
-FROM node:21-alpine3.17 AS base
+FROM node:21.4.0-alpine3.17 AS base
 
 # ENVs (available in production aswell, can be overwritten by commandline or env file)
 ## DOCKER_WORKDIR would be a classical ARG, but that is not multi layer persistent - shame
