@@ -6,8 +6,9 @@
     {
       "description": "Automatically merge minor and patch-level updates",
       "matchUpdateTypes": ["minor", "patch", "digest"],"updateTypes": ["minor", "patch", "digest"],
-      "automerge": true
-      "automergeType": "pr"
+      "automerge": true,
+      "automergeType": "pr",
+      "platformAutomerge": true
     }
   ],
   "npm": {
