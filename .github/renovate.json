@@ -4,8 +4,10 @@
   ],
   "packageRules": [
     {
-      "updateTypes": ["minor", "patch", "digest"],
+      "description": "Automatically merge minor and patch-level updates",
+      "matchUpdateTypes": ["minor", "patch", "digest"],"updateTypes": ["minor", "patch", "digest"],
       "automerge": true
+      "automergeType": "pr"
     }
   ],
   "npm": {
