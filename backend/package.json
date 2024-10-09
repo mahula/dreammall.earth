@@ -100,7 +100,7 @@
     "#types/*": "./src/graphql/types/*"
   },
   "engines": {
-    "node": ">=20"
+    "node": ">=20.18.0"
   },
   "overrides": {
     "eslint-plugin-type-graphql": {
